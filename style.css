@@ -276,6 +276,30 @@ img {
   font-weight: 500;
 }
 
+.card-img {
+  overflow: hidden;
+}
+
+.card-img img {
+  transition: all 0.5s;
+}
+
+.card-img img:hover {
+  transform: scale(1.1);
+}
+
+.grid-img-container {
+  overflow: hidden;
+}
+
+.grid-img-container img {
+  transition: all 0.5s;
+}
+
+.grid-img-container img:hover {
+  transform: scale(1.1);
+}
+
 .container-4 {
   margin-top: 70px;
   margin-bottom: 70px;
@@ -586,5 +610,17 @@ img {
   .footer p {
     display: block;
     width: 100%;
+  }
+
+  .grid-img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-main-container {
+    width: 100%;
+  }
+  .img-close {
+    display: none;
   }
 }
